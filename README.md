@@ -10,12 +10,12 @@
 
 ## 쿨러 연결
 1. terminal을 열어 python3을 설치해준다.
-sudo apt-get upgrade
-sudo apt-get update
-sudo apt install python3-pip
-sudo -H pip3 install -U jetson-stats
-reboot
-jtop
+- sudo apt-get upgrade
+- sudo apt-get update
+- sudo apt install python3-pip
+- sudo -H pip3 install -U jetson-stats
+- reboot
+- jtop
 2. 온도를 확인한다.
 3. 쿨링팬을 나사로 연결해준다.
 ![image](https://github.com/server-123/Zetson_Nano/assets/73692229/81fbc968-ea32-4221-a77b-009cdcbcf90a)
