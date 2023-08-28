@@ -8,7 +8,7 @@
 
 5. 젯슨 나노의 기본 설정을 완료해준다.
 
-## 쿨러 연결
+## 쿨링팬 연결
 1. terminal을 열어 python3을 설치해준다.
 - sudo apt-get upgrade
 - sudo apt-get update
@@ -19,3 +19,13 @@
 2. 온도를 확인한다.
 3. 쿨링팬을 나사로 연결해준다.
 ![image](https://github.com/server-123/Zetson_Nano/assets/73692229/81fbc968-ea32-4221-a77b-009cdcbcf90a)
+- cd Downloads
+- git clone  https://github.com/jetsonworld/jetson-fan-ctl.git
+- cd jetson-fan-ctl
+- sudo sh install.sh
+
+## CSI 카메라 연결
+![image](https://github.com/server-123/Zetson_Nano/assets/73692229/9b3bd3b1-51c6-45d1-a6c6-878978adf564)
+- git clone https://github.com/jetsonhacks/CSI-Camera.git
+- cd CSI-Camera
+- python3 simple_camera.py
