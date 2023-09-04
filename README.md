@@ -77,7 +77,7 @@ sudo reboot
 free -h
 ```
 
-#Classification VS Regression
+# Classification VS Regression
 ## Classification
 이미지 분류 모델은 입력 이미지를 사전 정의된 클래스 레이블로 분류하는 작업에 사용된다. 예를 들어, 고양이와 개를 구분하는 이미지 분류 모델은 주어진 이미지가 고양이인지 개인지를 판별하는 작업을 수행한다. 이러한 분류 작업에서는 입력 이미지에 대한 클래스 레이블을 예측하는 것이 목표이다. 일반적으로 분류 모델의 출력은 클래스 레이블에 해당하는 범주형 데이터이다.
 ## Regression
