@@ -1,4 +1,4 @@
-# Zetson_Nano
+# Jetson_Nano
 ## 젯슨 나노 세팅
 ### SD카드 설정
 1. sd 포맷터를 이용해 sd 카드를 포맷한다. (https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/)
