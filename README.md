@@ -51,3 +51,28 @@ github처럼 공개 이미지를 관리해주는 시스템이다. 누구나 쉽�
 출처 : https://s1mcoding.tistory.com/26
 
 오픈소스 기반의 웹 플랫폼으로, 다양한 프로그래밍 언어로 코드 작성 및 실행하는 개발 환경이다. 시각화를 만드는 데 유용하고, 다양한 프로그래밍 언어를 지원하며, 개발 중 프로그램을 계속 실행해 확인할 수 있기 때문에 머신러닝과 딥러닝에 많이 활용된다.
+
+## Memory swap
+```
+# Disable ZRAM:
+sudo systemctl disable nvzramconfig
+ 
+# Prevent X-Server from starting:
+sudo systemctl set-default multi-user.target
+
+ # Create additional 6GB swap file (assume 4GB already for a total of 10GB)
+sudo fallocate -l 6G /mnt/6GB.swap
+ sudo chmod 600 /mnt/6GB.swap
+ sudo mkswap /mnt/6GB.swap
+
+# Append the following line to /etc/fstab
+ sudo su
+echo "/mnt/6GB.swap swap swap defaults 0 0" >> /etc/fstab
+exit
+
+# REBOOT!
+sudo reboot
+
+# Check your memory and swap:
+free -h
+```
