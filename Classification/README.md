@@ -1,0 +1,11 @@
+- 주피터랩을 실행한다.
+- classification 폴더의 classification_interactive.ipynb에 있는 코드들을 순서대로 실행한다.
+![image](https://github.com/server-123/Jetson_Nano/assets/73692229/126f819c-6084-4f3c-8faf-23e2f9af3ebb)
+- thumbs_up의 데이터를 30개 수집한다.
+- thumbs_down의 데이터를 30개 수집한다.
+- 데이터는 배경과 각도 등을 다르게 해주는 게 좋다.
+- epochs를 10으로 설정하고 train을 해준다.
+- 젯슨이 데이터를 10번 돌리며 손실을 줄이고 정확도를 높이며 학습한다.
+- 학습이 완료되면 테스트 해본다.
+- 제대로 판단하지 못 한다면 다시 데이터를 추가로 10개씩 수집하고, epochs를 5로 다시 train한다.
+- 이 과정을 반복해 정확도를 높인다.
