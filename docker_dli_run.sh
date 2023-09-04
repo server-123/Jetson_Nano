@@ -1,3 +1,4 @@
+#Jupyter Lab에서 젯슨 나노 돌리기
 echo "sudo docker run --runtime nvidia -it --rm --network host \
     --volume ~/nvdli-data:/nvdli-nano/data \
     --volume /tmp/argus_socket:/tmp/argus_socket \
