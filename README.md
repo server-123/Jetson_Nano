@@ -62,8 +62,8 @@ sudo systemctl set-default multi-user.target
 
  # Create additional 6GB swap file (assume 4GB already for a total of 10GB)
 sudo fallocate -l 6G /mnt/6GB.swap
- sudo chmod 600 /mnt/6GB.swap
- sudo mkswap /mnt/6GB.swap
+sudo chmod 600 /mnt/6GB.swap
+sudo mkswap /mnt/6GB.swap
 
 # Append the following line to /etc/fstab
  sudo su
