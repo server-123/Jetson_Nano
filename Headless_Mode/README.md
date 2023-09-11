@@ -17,5 +17,9 @@ echo "sudo docker run --runtime nvidia -it --rm --network host \
 chmod +x docker_dli_run.sh #권한 부여
 ```
 
+```
+./docker_dli_run.sh
+```
+
 - http://192.168.55.1:8888/ 접속
 - 패스워드 입력
