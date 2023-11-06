@@ -1,6 +1,6 @@
 - 주피터랩을 실행한다.
 - classification 폴더의 classification_interactive.ipynb에 있는 코드들을 순서대로 실행한다.
-![image](https://github.com/server-123/Jetson_Nano/assets/73692229/126f819c-6084-4f3c-8faf-23e2f9af3ebb)
+![8](https://github.com/server-123/Jetson_Nano/assets/73692229/0abaaf86-8d50-4c45-83fc-3105ef56ce16)
 - thumbs_up의 데이터를 30개 수집한다.
 - thumbs_down의 데이터를 30개 수집한다.
 - 데이터는 배경과 각도 등을 다르게 해주는 게 좋다.
