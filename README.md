@@ -4,8 +4,8 @@
 1. sd 포맷터를 이용해 sd 카드를 포맷한다. (https://www.sdcard.org/downloads/formatter/sd-memory-card-formatter-for-windows-download/)
 2. 엔비디아에서 젯슨 나노 개발 키트를 받고, etcher를 이용해 sd 카드에 젯슨 나노 이미지 파일을 굽는다. (https://developer.nvidia.com/embedded/learn/getting-started-jetson)
 3. 젯슨 나노에 sd 카드를 삽입하고, 와이파이 동글, 키보드, 마우스, HDMI선을 연결한다.
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/960b1275-9df1-425c-b149-f210ef662777)
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/2b813228-5a89-412f-a9c2-1eb09b371f78)
+![1](https://github.com/server-123/Jetson_Nano/assets/73692229/86ab9bce-f024-4731-86af-0142ad0a97a5)
+![2](https://github.com/server-123/Jetson_Nano/assets/73692229/f7edda01-5400-4476-82e7-5eb2022d3261)
 4. 젯슨 나노의 기본 설정을 완료해준다.
 
 ### 쿨링팬 연결
@@ -18,14 +18,14 @@
 - jtop
 2. 온도를 확인한다.
 3. 쿨링팬을 나사로 연결해준다.
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/81fbc968-ea32-4221-a77b-009cdcbcf90a)
+![3](https://github.com/server-123/Jetson_Nano/assets/73692229/93976bbc-f331-46e0-b305-2b6b5b964b9f)
 - cd Downloads
 - git clone  https://github.com/jetsonworld/jetson-fan-ctl.git
 - cd jetson-fan-ctl
 - sudo sh install.sh
 
 ### CSI 카메라 연결
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/9b3bd3b1-51c6-45d1-a6c6-878978adf564)
+![4](https://github.com/server-123/Jetson_Nano/assets/73692229/c0f7c487-fff7-4a4a-bd21-99c126d07a57)
 - git clone https://github.com/jetsonhacks/CSI-Camera.git
 - cd CSI-Camera
 - python3 simple_camera.py
@@ -37,15 +37,15 @@
 
 ### 도커 이미지란?
 도커에서 서비스 운영에 필요한 서버 프로그램, 코드 및 라이브러리, 컴파일된 실행 파일 등을 묶은 형태이다. 컨테이너 생성에 필요한 모든 파일과 환경을 가진 것이다. 도커 이미지를 실행하면 도커 컨테이너가 된다.
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/b93ad585-e39f-4c25-8d98-5f88b3626a09)
+![5](https://github.com/server-123/Jetson_Nano/assets/73692229/84c0c7c6-21e3-4c6b-9c83-c492ea18fd81)
 
 ### 도커 레이어란?
 도커 이미지는 레이어라는 개념을 사용해 여러 개의 레이어를 나누어 이미지를 구성한다. 이 방식을 사용하면 기존의 이미지 레이어를 이용해 다양한 이미지를 새로 만들 수 있고, 기존 이미지를 이용하기 떄문에 용량을 절약할 수 있다. 컨테이너를 생성할 때도 기존의 이미지 레이어 위에 읽기/쓰기 레이어를 추가한다. 이미지 레이어를 그대로 사용하면서 컨테이너가 실행 중에 생성하는 파일이나 변경된 내용은 읽기/쓰기 레이어에 저장되므로 여러 개의 컨테이너를 생성해도 최소한의 용량만 사용하게 된다.
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/724f81fd-1063-48e8-9776-e7cee29eb51b)
+![6](https://github.com/server-123/Jetson_Nano/assets/73692229/fdeafccd-f908-47a4-bed2-0d4d7f2c7464)
 
 ### 도커 허브란?
 github처럼 공개 이미지를 관리해주는 시스템이다. 누구나 쉽게 도커 이미지를 만들고 배포할 수 있다. 또한 도커 허브에서 도커 이미지를 Pull 해와 실행시킬 수 있다. 용량이 매우 큰 이미지도 허브에서 관리해주기 때문에 사용자는 부담 없이 도커 이미지를 사용할 수 있다.
-![image](https://github.com/server-123/Zetson_Nano/assets/73692229/20dfc47b-1274-4ebd-9205-b323e9391fe6)
+![7](https://github.com/server-123/Jetson_Nano/assets/73692229/692a383a-bea7-494e-8c55-9f3c09bd92ca)
 
 ## 주피터 노트북(Jupyter Notebook)이란?
 출처 : https://s1mcoding.tistory.com/26
